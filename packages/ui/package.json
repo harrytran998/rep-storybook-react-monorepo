@@ -1,0 +1,30 @@
+{
+  "name": "@rep/ui",
+  "version": "0.0.1",
+  "license": "unlicense",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rimraf dist"
+  },
+  "files": [
+    "dist",
+    "emotion.d.ts"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
