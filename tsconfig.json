@@ -38,13 +38,8 @@
     "jsx": "react",
     "types": ["vite/client", "node"],
     "paths": {
-      "@broker/core": ["packages/core/src"],
-      "@broker/ui": ["packages/ui/src"],
-      "@broker/icons": ["packages/icons/src"],
-      "@broker/hooks": ["packages/hooks/src"],
-      "@broker/utils": ["packages/utils/src"],
-      "@broker/types": ["packages/types/src"],
-      "@broker/test-utils": ["packages/test-utils/src"]
+      "@rep/ui": ["packages/ui/src"],
+      "@rep/utils": ["packages/utils/src"]
     }
   },
   "exclude": ["node_modules"],

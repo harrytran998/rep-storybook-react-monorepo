@@ -1,20 +1,9 @@
-import { ThemeProvider } from '@emotion/react';
-import { themes } from '@storybook/theming';
-import { useDarkMode } from 'storybook-dark-mode';
-import { CssBaseline, MuiThemeProvider, theme } from '../packages/ui';
-
 /**
  * @type {import('@storybook/react').Parameters}
  */
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   layout: 'centered',
-  darkMode: {
-    // Override the default dark theme
-    dark: { ...themes.dark, appContentBg: theme(true).palette.background.paper },
-    // Override the default light theme
-    light: { ...themes.normal, appContentBg: theme(false).palette.background.paper },
-  },
   options: {
     // Sort Story alphabetical
     storySort: (a, b) =>
@@ -26,24 +15,12 @@ export const parameters = {
       date: /Date$/,
     },
   },
-};
-
-const ThemeWrapper = props => {
-  const brokerTheme = theme(useDarkMode());
-  return (
-    <MuiThemeProvider theme={brokerTheme}>
-      <ThemeProvider theme={brokerTheme}>
-        <CssBaseline />
-        {props.children}
-      </ThemeProvider>
-    </MuiThemeProvider>
-  );
-};
+}
 
 export const decorators = [
-  Story => (
-    <ThemeWrapper>
+  (Story) => (
+    <div>
       <Story />
-    </ThemeWrapper>
+    </div>
   ),
-];
+]

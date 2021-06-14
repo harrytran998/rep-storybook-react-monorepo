@@ -1,8 +1,6 @@
 {
-  "name": "@broker/utils",
+  "name": "@rep/utils",
   "version": "0.0.1",
-  "description": "Broker utilities function can share to all projects",
-  "author": "Cuu + Tung + Nhat",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -31,87 +29,6 @@
     ".": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.js"
-    },
-    "./is": {
-      "import": "./dist/is.mjs",
-      "require": "./dist/is.js"
-    },
-    "./logger": {
-      "import": "./dist/logger.mjs",
-      "require": "./dist/logger.js"
-    },
-    "./validators": {
-      "import": "./dist/validators.mjs",
-      "require": "./dist/validators.js"
-    },
-    "./uuid": {
-      "import": "./dist/uuid.mjs",
-      "require": "./dist/uuid.js"
-    },
-    "./lodash": {
-      "import": "./dist/lodash.mjs",
-      "require": "./dist/lodash.js"
-    },
-    "./string": {
-      "import": "./dist/format/string.mjs",
-      "require": "./dist/format/string.js"
-    },
-    "./number": {
-      "import": "./dist/format/number.mjs",
-      "require": "./dist/format/number.js"
-    },
-    "./array": {
-      "import": "./dist/format/array.mjs",
-      "require": "./dist/format/array.js"
-    },
-    "./date": {
-      "import": "./dist/format/date.mjs",
-      "require": "./dist/format/date.js"
-    },
-    "./textMessage": {
-      "import": "./dist/const/textMessage.mjs",
-      "require": "./dist/const/textMessage.js"
-    },
-    "./sorting": {
-      "import": "./dist/sorting.mjs",
-      "require": "./dist/sorting.js"
-    }
-  },
-  "typesVersions": {
-    "*": {
-      "is": [
-        "dist/is.d.ts"
-      ],
-      "logger": [
-        "dist/logger.d.ts"
-      ],
-      "validators": [
-        "dist/validators.d.ts"
-      ],
-      "uuid": [
-        "dist/uuid.d.ts"
-      ],
-      "lodash": [
-        "dist/lodash.d.ts"
-      ],
-      "string": [
-        "dist/string.d.ts"
-      ],
-      "number": [
-        "dist/number.d.ts"
-      ],
-      "date": [
-        "dist/date.d.ts"
-      ],
-      "array": [
-        "dist/array.d.ts"
-      ],
-      "texMessage": [
-        "dist/textMessage.d.ts"
-      ],
-      "sorting": [
-        "dist/sorting.d.ts"
-      ]
     }
   }
 }

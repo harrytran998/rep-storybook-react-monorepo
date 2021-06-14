@@ -1,8 +1,0 @@
-{
-  "extends": "../../configs/tsconfig.base.json",
-  "include": ["src", "emotion.d.ts", "../../typings"],
-  "exclude": ["src/**/*.spec.tsx", "src/**/*.stories.tsx", "src/**/*.spec.ts"],
-  "compilerOptions": {
-    "baseUrl": "."
-  }
-}

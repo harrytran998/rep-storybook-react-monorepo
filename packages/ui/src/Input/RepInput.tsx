@@ -1,12 +1,11 @@
-import { uuidV4 } from '@broker/utils';
-import { FormControl, InputAdornment, Input } from '@material-ui/core';
-import React from 'react';
-import { EnInputProps } from './types';
+import { uuidV4 } from '@rep/utils'
+import { FormControl, InputAdornment, Input } from '@material-ui/core'
+import React from 'react'
 
-export const EnInput: React.FC<OutlinedInputProps> = ({
+export const RepInput = ({
   id = uuidV4(),
   label,
-  size = 'large',
+  size = '',
   helperText,
   error,
   prefixElement,
@@ -15,7 +14,6 @@ export const EnInput: React.FC<OutlinedInputProps> = ({
 }) => (
   <FormControl fullWidth>
     <Input
-      size={size}
       id={id}
       error={error}
       endAdornment={
@@ -24,6 +22,7 @@ export const EnInput: React.FC<OutlinedInputProps> = ({
             {suffixElement}
           </InputAdornment>
         )
-      } />
+      }
+    />
   </FormControl>
-);
+)
